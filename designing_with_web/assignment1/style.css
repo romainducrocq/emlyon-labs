@@ -1,0 +1,76 @@
+#header {
+  text-align: center;
+}
+
+#header h1{
+  color: white;
+  font-size: 40px;
+  font-family: "Carter One", cursive;
+  background-color: rgb(39,40,34);
+}
+
+#footer {
+  color: white;
+  background-color: rgb(39,40,34);
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 40px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+body {
+  background-image: url("https://cdn.glitch.com/84cc670d-7aa8-49c3-9e75-abd4c3611aa5%2Fcode.png?v=1570713966446");
+  background-attachment: fixed;
+  background-position: 0px 0px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px;
+  border: 1em solid;
+}
+
+.title {
+  font-family: "Mansalva", cursive;
+  font-size: 40px;
+}
+
+.fable {
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.morale {
+  font-family: "Niconne", cursive;
+  font-size: 40px;
+  color: #0099ff;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.mp3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

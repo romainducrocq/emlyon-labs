@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotify track saver</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a
+        class="navbar-brand"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.spotify.com/fr/"
+      >
+        <img
+          src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2FSpotify_logo.svg?v=1572295835146"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <a
+        class="navbar-brand"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.spotify.com/fr/"
+        >Spotify</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            href="https://romainducrocq-assignment3.glitch.me/index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a
+            class="nav-item nav-link active"
+            href="https://romainducrocq-assignment3.glitch.me/documentation.html"
+            >Documentation</a
+          >
+          <a
+            class="nav-item nav-link"
+            href="https://romainducrocq-assignment3.glitch.me/itfffKey.html"
+            >Track Saver</a
+          >
+        </div>
+        <div class="navbar-text ml-auto">Romain Ducrocq</div>
+      </div>
+    </nav>
+
+    <div id="main" class="container">
+      <h1>
+        How to build your own Spotify Track Saver ?
+      </h1>
+
+      <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link text-secondary active"
+            id="nav-webhook-tab"
+            data-toggle="tab"
+            href="#nav-webhook"
+            role="tab"
+            aria-controls="nav-webhook"
+            aria-selected="true"
+            >Build your webhook</a
+          >
+          <a
+            class="nav-item nav-link text-secondary"
+            id="nav-saver-tab"
+            data-toggle="tab"
+            href="#nav-saver"
+            role="tab"
+            aria-controls="nav-saver"
+            aria-selected="false"
+            >Save your tracks</a
+          >
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-webhook"
+          role="tabpanel"
+          aria-labelledby="nav-webhook-tab"
+        >
+          <ol class="doc">
+            <li>
+              Go on
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ifttt.com/"
+                >the IFTTT website</a
+              >
+              and create an account.
+            </li>
+            <li>Create a new Applet.</li>
+            <li>
+              <strong>This</strong>
+              <ul>
+                <li>Select <strong>Webhooks</strong>.</li>
+                <li>Select <strong>Receive a web request</strong>.</li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Fthis.png?v=1572308746659"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Fwebhooks.png?v=1572308752586"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Freceive.png?v=1572308757752"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <strong>That</strong>
+              <ul>
+                <li>Select <strong>Spotify</strong>.</li>
+                <li>Log in to your <strong>Spotify account</strong>.</li>
+                <li>Select <strong>Save a track</strong>.</li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Fthat.png?v=1572309137962"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Fspotify.png?v=1572309143786"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Fsave.png?v=1572309148555"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <strong>Then</strong>
+              <ul>
+                <li>
+                  Add <strong>Value1 to Search query</strong> and
+                  <strong>Value2 to Artist name</strong>.
+                </li>
+                <li>
+                  Enter the Event Name <strong>track_saver</strong> to create
+                  the trigger.
+                </li>
+                <li>Click on <strong>Finish</strong>.</li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Faction.png?v=1572309417019"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Ftrigger.png?v=1572309407898"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        class="img"
+                        src="https://cdn.glitch.com/2c63ab38-afe4-4202-b24e-bb48e9836d47%2Ffinish.png?v=1572309458516"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-saver"
+          role="tabpanel"
+          aria-labelledby="nav-saver-tab"
+        >
+          <ol class="doc">
+            <li>
+              Now that your webhook is ready, you can either:
+              <ul>
+                <li>Use the Track Saver provided on this website.</li>
+                <li>Create your own Track Saver.</li>
+              </ul>
+              In both cases, you will need your IFTTT Key:
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ifttt.com/maker_webhooks"
+                >Get it here</a
+              >
+              (in the Documentation tab).
+            </li>
+            <li>
+              To create your own Track Saver:
+              <ul>
+                <li>Remix this project to Glitch.</li>
+                <li>Add your IFTTT Key in the javascript file.</li>
+                <li>Customize it as you want.</li>
+              </ul>
+              <div
+                class="glitch-embed-wrap"
+                style="height: 420px; width: 100%;"
+              >
+                <iframe
+                  src="https://glitch.com/embed/#!/embed/track-saver?path=index.html&previewSize=0"
+                  title="track-saver on Glitch"
+                  allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+                  style="height: 100%; width: 100%; border: 0;"
+                >
+                </iframe>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

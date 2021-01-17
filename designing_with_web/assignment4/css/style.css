@@ -1,0 +1,37 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#main {
+  margin: 50px auto auto auto;
+}
+
+.home {
+  text-align: center;
+}
+
+.gif {
+  display: block;
+  margin: auto auto auto auto;
+  width: 25%;
+}
+
+.img {
+  display: block;
+  margin: auto auto auto auto;
+  width: 100%;
+}
+
+.doc {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.doc > li {
+  margin: 15px auto auto auto;
+  border: 3px solid;
+}
+
+#alert {
+  margin: 50px auto auto auto;
+}

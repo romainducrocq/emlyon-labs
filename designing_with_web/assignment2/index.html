@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Randomex</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Carter+One|Shadows+Into+Light|Permanent+Marker|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--
+      To validate, your project must:
+      - combine HTML, CSS, and JS
+      - load data using "$.getJSON()"
+      - create or modify HTML elements using at least 2 elements from your dataset
+    -->
+
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h1>The Randomex</h1>
+        </div>
+        <div class="six columns">
+          <button
+            class="button"
+            style="vertical-align:middle"
+            onclick="randomize()"
+          >
+            <span>Randomize</span>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <h2>
+            - The random (and probably false) infos you didn't knew about
+            Pokemons.
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <div id="pokemonName"></div>
+        </div>
+        <div class="six columns">
+          <div id="pokemonImg"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <h2 class="title" id="titleBlackMirror"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="text" id="blackMirrorEpisode"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <h2 class="title" id="titleRoleInGovernment"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="text" id="roleInGovernment"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <h2 class="title" id="titleNobelPrize"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="text" id="nobelPrize"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

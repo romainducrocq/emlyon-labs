@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Twiter sentiment analysis</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a
+        class="navbar-brand"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/home"
+      >
+        <img
+          src="https://cdn.glitch.com/764208fd-b4d0-42b7-8a7d-7c75116b18d2%2Ftwitter.png?v=1572347638581"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <a
+        class="navbar-brand"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/home"
+        >Twitter</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            href="https://romainducrocq-assignment4.glitch.me/index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a
+            class="nav-item nav-link active"
+            href="https://romainducrocq-assignment4.glitch.me/documentation.html"
+            >Documentation</a
+          >
+          <a
+            class="nav-item nav-link"
+            href="https://romainducrocq-assignment4.glitch.me/tweetAnalyzer.html"
+            >Tweet Analyzer</a
+          >
+        </div>
+        <div class="navbar-text ml-auto">Romain Ducrocq</div>
+      </div>
+    </nav>
+
+    <div id="main" class="container">
+      <h1>
+        How to build your own Twitter Sentiment Analyzer ?
+      </h1>
+
+      <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link text-secondary active"
+            id="nav-ml5-tab"
+            data-toggle="tab"
+            href="#nav-ml5"
+            role="tab"
+            aria-controls="nav-ml5"
+            aria-selected="true"
+            >Understand ml5</a
+          >
+          <a
+            class="nav-item nav-link text-secondary"
+            id="nav-tweets-tab"
+            data-toggle="tab"
+            href="#nav-tweets"
+            role="tab"
+            aria-controls="nav-tweets"
+            aria-selected="false"
+            >Get your tweets</a
+          >
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-ml5"
+          role="tabpanel"
+          aria-labelledby="nav-ml5-tab"
+        >
+          <ol class="doc">
+            <li>
+              <strong>Context</strong>
+              <ul>
+                <li>
+                  <strong>Machine learning</strong> is an application of
+                  artificial intelligence (AI) that provides systems the ability
+                  to automatically learn and improve from experience without
+                  being explicitly programmed.
+                </li>
+                <li>
+                  <strong>ml5</strong> is a beginner-friendly Javascript library
+                  that provides simple and ready-to-use encapsulation of
+                  Google's TensorFlow machine learning functions.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Learn about</strong>
+              <ul>
+                <li>
+                  The
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://learn.ml5js.org/docs/#/"
+                    ><strong> ml5 website</strong></a
+                  >.
+                </li>
+                <br />
+                <li>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/jmznx0Q1fP0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Download the ml5 examples</strong>
+              <ul>
+                <li>
+                  Go to
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/ml5js/ml5-examples/tree/development"
+                    ><strong>the Github repository</strong></a
+                  >.
+                </li>
+                <li>
+                  <strong>Download</strong> the zip or
+                  <strong>clone</strong> the repo.
+                  <p>
+                    ~$ git clone https://github.com/ml5js/ml5-examples.git
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Play around</strong>
+              <ul>
+                <li>
+                  Look at the examples in <strong>ml5-examples/p5js</strong>.
+                </li>
+                <li>
+                  And
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://ml5js.github.io/ml5-examples/public/"
+                    ><strong>online</strong></a
+                  >.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Get the sentiment analyzer</strong>
+              <ul>
+                <li>
+                  Get it from
+                  <strong
+                    >ml5-examples/p5js/Sentiment/Sentiment_Interactive/</strong
+                  >.
+                </li>
+                <li>
+                  Or
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://ml5js.github.io/ml5-examples/p5js/Sentiment/Sentiment_Interactive/"
+                    ><strong>online</strong></a
+                  >.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-tweets"
+          role="tabpanel"
+          aria-labelledby="nav-tweets-tab"
+        >
+          <ol class="doc">
+            <li>
+              <strong>Notes</strong>
+              <ul>
+                <li>
+                  <strong
+                    >Twitter API v1.1 requires OAuth authentication</strong
+                  >
+                  to manipulate datasets, which is impossible to perform with a
+                  client-side language like Javascript. <br />It is therefore
+                  impossible to make HTTP requests and get tweets from JSON
+                  files without using a third-party server-side language like
+                  PHP. <br />For further information, see
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://developer.twitter.com/en.html"
+                    ><strong>Twitter for developers</strong></a
+                  >.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Proposed alternatives</strong>
+              <ul>
+                <li>
+                  <strong>Alternative 1:</strong> build a search bar linked with
+                  Twitter to find tweets and a text area to copy-paste them into
+                  the sentiment analyzer.
+                </li>
+                <li>
+                  <strong>Alternative 2:</strong> save a list of tweets in an
+                  array and create user access through interactive web design.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>To create your own Tweet Analyzer:</strong>
+              <ul>
+                <li>Remix this project to <strong>Glitch</strong>.</li>
+                <li><strong>Customize</strong> it as you want.</li>
+                <li>Have <strong>fun</strong>.</li>
+              </ul>
+              <div
+                class="glitch-embed-wrap"
+                style="height: 420px; width: 100%;"
+              >
+                <iframe
+                  src="https://glitch.com/embed/#!/embed/tweet-analyzer?path=script.js&previewSize=0"
+                  title="tweet-analyzer on Glitch"
+                  allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+                  style="height: 100%; width: 100%; border: 0;"
+                >
+                </iframe>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

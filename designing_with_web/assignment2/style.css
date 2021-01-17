@@ -1,0 +1,84 @@
+body {
+  background-image: url("https://cdn.glitch.com/dc16a8d0-fdc3-409b-93b0-1167b7d78841%2Fpikachu.jpg?v=1570806854751");
+  background-attachment: fixed;
+  background-position: 0px 0px;
+}
+
+body > .container {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 40px;
+  border: 1em solid;
+}
+
+h1{
+  font-size: 40px;
+  font-family: "Carter One", cursive;
+}
+
+h2{
+  font-size: 28px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.title{
+  font-size: 28px;
+  font-family: 'Permanent Marker', cursive;
+  color: #f4511e;
+}
+
+.text{
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#pokemonName{
+  font-family: "Carter One", cursive;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#pokemonImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

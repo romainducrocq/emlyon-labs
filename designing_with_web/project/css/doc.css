@@ -1,0 +1,19 @@
+.img.mockup{
+  width:50%;
+}
+
+.img.icon-round{
+  width:25%;
+  height:auto%;
+  border-radius: 15%;
+}
+
+.columns.six.mockup-background{
+  background-color: #ffe0b3;
+  border: 1px solid;
+}
+
+.columns.twelve.mockup-background{
+  background-color: #ffe0b3;
+  border: 1px solid;
+}
