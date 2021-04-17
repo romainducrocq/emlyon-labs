@@ -1,1 +1,1 @@
-- Snake Posenet: https://romainducrocq.github.io/emlyon/processing_with_ai/snakePosenet/index.html
+- Snake Posenet: https://romainducrocq.github.io/emlyon/processing_with_ai/snakePosenet/
