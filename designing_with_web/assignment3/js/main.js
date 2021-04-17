@@ -7,7 +7,7 @@ $("form").on("submit", function(event) {
   iftttKey = $iftttKey.val();
 
   var url =
-    "https://romainducrocq-assignment3.glitch.me/spotifyTrackSaver.html?iftttKey=" +
+    "spotifyTrackSaver.html?iftttKey=" +
     iftttKey;
 
   window.open(url, "_blank");
