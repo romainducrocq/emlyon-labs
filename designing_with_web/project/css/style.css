@@ -1,9 +1,9 @@
 body {
-  background-image: url("https://cdn.glitch.com/4ac1d9f1-d326-43ca-bccb-d0a68898db8c%2Fdeanna-j-3GZlhROZIQg-unsplash.jpg?v=1574858321489");
+  background-image: url("../images/deanna-j-3GZlhROZIQg-unsplash.jpg");
   background-attachment: fixed;
   background-position: 0px 0px;
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Ubuntu", sans-serif;
   padding-bottom: 40px;
 }
@@ -47,13 +47,13 @@ p{
   background-color: #f2f2f2;
 }
 
-.navtag-big { 
+.navtag-big {
   font-size: 24px;
   color: #ffe0b3;
   font-family: 'Special Elite', cursive;
 }
 
-.navtag-medium { 
+.navtag-medium {
   font-size: 18px;
   font-family: 'Special Elite', cursive;
 }
@@ -73,6 +73,5 @@ p{
 }
 
 .white-space{
-   margin: 0 0 0 20px; 
+   margin: 0 0 0 20px;
 }
-
